@@ -1,0 +1,7 @@
+<div>
+    {% for letter in "abcdefghijklmnopqrstuvwxyz" %}
+        <a href="{% url 'directors_list' letter=letter %}">
+            {{ letter }}
+        </a>
+    {% endfor %}
+</div>

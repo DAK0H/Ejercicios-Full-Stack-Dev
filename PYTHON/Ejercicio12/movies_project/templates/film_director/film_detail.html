@@ -1,0 +1,25 @@
+{% extends 'layout/base.html' %}
+
+{% block 'title' %} {{ film.director.name }}{{ film.director.last_name }} | {{ film.title }}{% endblock %}
+
+{% block 'content' %}
+<div>
+    <img src="/{{ film.cover }}" alt="{{ film.title }}">
+</div>
+
+<div>
+    <ul class="list">
+        <li><h1>{{ film.title }}</h1></li>
+        <li>{{ film.creation_year }}</li>
+        <li>{{ film.duration }}</li>
+        <li>{{ film.main_actors }}</li>
+        <li style="text-align: justify;">{{ film.storyline }}</li>
+        <span class="btn-aux">
+            <a href="javascript:history.back()" ><img style="width: 50px; height: 50px;" src="/static/images/hacia-atras.png" alt="Volver"></a>
+        </span>
+    </ul>
+
+</div>
+
+
+{% endblock %}

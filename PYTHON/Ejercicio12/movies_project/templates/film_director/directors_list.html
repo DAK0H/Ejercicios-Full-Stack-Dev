@@ -1,0 +1,26 @@
+{% extends 'layout/base.html' %}
+
+{% block 'title' %}Directores de Cine{% endblock %}
+
+{% block 'content' %}
+
+
+{% include 'partials/search.html' %}
+{% include 'partials/by_initial.html' %}
+
+
+
+<span class="btn btn-view-all">
+    <a href="{% url 'directors_list' %}" >Ver todos</a>
+</span>
+
+
+
+<ul >
+    {% for director in directors %}
+    <li class="box"><h2><a href="{% url 'director_detail' id=director.id %}"> {{ director.name }} {{ director.last_name }}</h2></a></li>
+    {% endfor %}
+</ul>
+
+
+{% endblock %}

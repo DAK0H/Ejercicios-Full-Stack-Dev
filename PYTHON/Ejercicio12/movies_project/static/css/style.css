@@ -1,0 +1,198 @@
+:root {
+    --color-primary: #2ea3f2;
+    --color-text: #666;
+    --font-main: 'Roboto-bold';
+    --font-text: 'Roboto-regular';
+    color: var(--color-text);
+}  
+    
+    /* Reset CSS */
+      
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-text);
+}  
+    
+    /* Main settings */
+      
+@font-face {
+    font-family: Roboto-bold;
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+      
+@font-face {
+    font-family: Roboto-regular;
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+      
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-main);
+}
+      
+ul {
+    list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+li a:hover {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+li a:visited {
+    color: var(--color-text);
+}
+
+    /* End Main settings */
+
+    /* Layout settings */
+
+nav {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-primary);
+    width: 100vw;
+    height: 80px;
+}
+    
+
+nav h1 a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: var(--font-main);
+}
+
+nav h1 a:hover {
+    text-decoration: none;
+}
+    
+nav h1 a:visited {
+    color: white;
+}
+
+nav img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+    
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+a:visited {
+    color: var(--color-text);
+}
+
+.list {
+    display: flex;
+    border: 0px;
+    list-style-type: none;
+    flex-direction: column;
+    width: 50vw;
+}
+    
+.list li {
+    padding: 15px;
+    width: 100%;
+    border-bottom: 1px solid var(--color-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    margin-top: 10px;
+    width: 140px;
+    height: 200px;
+}
+
+.search {
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+    margin: 20px;
+}
+
+.search-bar {
+    padding: 1px;
+    width: 100%;
+}
+
+.btn {
+    
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-search {
+    padding: 1px;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.btn-search:hover {
+    background-color: white;
+    color: var(--color-primary);
+}
+
+.btn-search:visited {
+    text-decoration: none;
+}
+
+.btn-view-all {
+    padding: 1px;
+    margin-top: 5px;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.btn-view-all a {
+    text-decoration: none;
+    color: white;
+}
+
+.box {
+    margin-top: 20px;
+    width: 300px;
+    background-color: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+
+/* End Layout settings */

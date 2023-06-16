@@ -1,0 +1,29 @@
+{% extends 'layout/base.html' %}
+
+{% block 'title' %}{{ director.name }} {{ director.last_name }}{% endblock %}
+
+{% block 'content' %}
+<div>
+    <img src="/{{ director.image }}" alt="{{ director.name }} {{ director.last_name }}">
+</div>
+
+<div>
+    <ul class="list">
+        <li><h4>{{ director.name }} {{ director.last_name }}</h4></li>
+        <li>Nació el {{ director.birth_date }} en {{ director.birth_location }}.</li>
+        <li>{{ director.age }} años</li>
+        <li>{{ director.facets }}</li>
+        <li>Premios: {{ director.awards }}</li>
+        <li><h4 style="align-self: start;">Películas: </h4>
+            {% for film in films %}
+            <p >
+                <a href="{% url 'film_detail' id=film.id %}">{{ film.title }}
+                </a>
+            </p>
+            {% endfor %}
+        </li>
+    </ul>
+</div>
+
+
+{% endblock %}
