@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.encabezado {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+.imagen-galeria {
+    width: 300px;
+    opacity: 0.5;
+
+}
+
+.imagen-galeria:hover {
+    opacity: 1;
+    cursor: pointer;
+}
