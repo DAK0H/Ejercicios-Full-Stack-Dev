@@ -1,0 +1,73 @@
+<!-- Replica el ejercicio del vídeo 3 de esta sesión y realiza el siguiente cambio:
+    Replícalo exactamente igual, pero realiza una nueva versión en modo oscuro
+    Los colores serán los siguientes
+        El rosa se queda igual
+        El fondo blanco será sustituido por el color #161717
+        El fondo de los inputs tendrá un color #212121
+        El fondo de los inputs cuando se hace hover será del color #454045
+        Los textos tendrán un color blanco -->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Login</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>Regístrate en nuestra página</h3>
+      <div class="buttons">
+        <button class="google-btn">
+          <picture>
+            <img
+              src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png"
+              alt="logo-google"
+            />
+          </picture>
+          <span>Registrarse con Google</span>
+        </button>
+        <button class="twitter-btn">
+          <picture>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/2491px-Logo_of_Twitter.svg.png" alt="logo-twitter">
+          </picture>
+        </button>
+      </div>
+      <div class="separator">
+        <hr />
+        <span>O...</span>
+        <hr />
+      </div>
+      <form action="" method="">
+        <div class="section-inputs">
+          <label for="name">
+            <span>Nombre</span>
+            <input id="name" type="text" name="name" />
+          </label>
+          <label for="username">
+            <span>Usuario</span>
+            <input id="username" type="text" name="username" />
+          </label>
+        </div>
+        <label for="email">
+          <span>Email</span>
+          <input id="email" type="text" name="email" />
+        </label>
+        <label for="contraseña">
+          <span>Contraseña</span>
+          <input
+            id="contraseña"
+            type="text"
+            name="contraseña"
+            placeholder="6+ caracteres"
+          />
+        </label>
+        <label for="checkbox" class="checkbox-label">
+          <input type="checkbox" name="" id="checkbox" />
+          <span>Acepto las condiciones y el Aviso Legal</span>
+        </label>
+        <button type="submit" class="submit-btn">Crear cuenta</button>
+      </form>
+    </div>
+  </body>
+</html>
